@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneCheckViewController" customModule="Test" customModuleProvider="target">
+            <connections>
+                <outlet property="codeTextField" destination="Ctl-73-X5Y" id="wGv-9H-weS"/>
+                <outlet property="nextBtn" destination="TBF-Ih-XFr" id="v2f-Pu-mcf"/>
+                <outlet property="phoneTextField" destination="FHc-Sm-hqS" id="Biu-LJ-AFL"/>
+                <outlet property="sendCodeBtn" destination="mme-t4-1KS" id="K2F-DL-3Lo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPz-TC-Zso">
+                    <rect key="frame" x="82" y="298" width="250" height="300"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZA-9l-Mpm" userLabel="phone">
+                            <rect key="frame" x="5" y="38" width="240" height="34"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0T-MP-yPy">
+                                    <rect key="frame" x="0.0" y="0.0" width="20" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите номер телефона" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FHc-Sm-hqS" customClass="TextFieldDefault" customModule="Test" customModuleProvider="target">
+                                    <rect key="frame" x="25" y="0.0" width="215" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="onlyNumbers" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="maxLeng">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="FHc-Sm-hqS" secondAttribute="bottom" id="CHu-sJ-KVd"/>
+                                <constraint firstItem="k0T-MP-yPy" firstAttribute="leading" secondItem="dZA-9l-Mpm" secondAttribute="leading" id="SpY-4f-eXO"/>
+                                <constraint firstItem="FHc-Sm-hqS" firstAttribute="top" secondItem="dZA-9l-Mpm" secondAttribute="top" id="Yuz-II-Skd"/>
+                                <constraint firstItem="k0T-MP-yPy" firstAttribute="top" secondItem="dZA-9l-Mpm" secondAttribute="top" id="Z7j-UM-uKb"/>
+                                <constraint firstAttribute="bottom" secondItem="k0T-MP-yPy" secondAttribute="bottom" id="ZuG-7M-4Zm"/>
+                                <constraint firstAttribute="trailing" secondItem="FHc-Sm-hqS" secondAttribute="trailing" id="eqM-OK-wVt"/>
+                                <constraint firstAttribute="width" constant="240" id="gDV-J1-lvl"/>
+                                <constraint firstItem="FHc-Sm-hqS" firstAttribute="leading" secondItem="k0T-MP-yPy" secondAttribute="trailing" constant="5" id="oj0-gr-0Bt"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mme-t4-1KS">
+                            <rect key="frame" x="88" y="92" width="74" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="iw5-xD-9TP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="Выслать код"/>
+                            <connections>
+                                <action selector="sendCodeBtn:" destination="-1" eventType="touchUpInside" id="fRq-bl-OTa"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите код" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ctl-73-X5Y" customClass="TextFieldDefault" customModule="Test" customModuleProvider="target">
+                            <rect key="frame" x="75" y="132" width="100" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="Jp9-v4-jaj"/>
+                                <constraint firstAttribute="height" constant="40" id="O0X-XU-mBJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="onlyNumbers" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maxLeng">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBF-Ih-XFr">
+                            <rect key="frame" x="75" y="202" width="100" height="40"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="1YH-hZ-pG8"/>
+                                <constraint firstAttribute="width" constant="100" id="SHm-JR-ulh"/>
+                            </constraints>
+                            <state key="normal" title="Далее"/>
+                            <state key="disabled">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="nextBtn:" destination="-1" eventType="touchUpInside" id="Ywb-by-oOh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Ctl-73-X5Y" firstAttribute="centerX" secondItem="lPz-TC-Zso" secondAttribute="centerX" id="3eO-Wm-xkM"/>
+                        <constraint firstItem="TBF-Ih-XFr" firstAttribute="centerX" secondItem="lPz-TC-Zso" secondAttribute="centerX" id="8Tu-Jg-YhN"/>
+                        <constraint firstAttribute="width" constant="250" id="9tS-1p-fR2"/>
+                        <constraint firstItem="mme-t4-1KS" firstAttribute="top" secondItem="dZA-9l-Mpm" secondAttribute="bottom" constant="20" id="BI8-oK-FHS"/>
+                        <constraint firstItem="TBF-Ih-XFr" firstAttribute="top" secondItem="Ctl-73-X5Y" secondAttribute="bottom" constant="30" id="G9V-ZS-f9U"/>
+                        <constraint firstItem="dZA-9l-Mpm" firstAttribute="centerX" secondItem="lPz-TC-Zso" secondAttribute="centerX" id="N9t-PL-vBR"/>
+                        <constraint firstItem="dZA-9l-Mpm" firstAttribute="top" secondItem="lPz-TC-Zso" secondAttribute="topMargin" constant="30" id="eZG-zO-Lcl"/>
+                        <constraint firstAttribute="height" constant="300" id="oLZ-8F-xRl"/>
+                        <constraint firstItem="Ctl-73-X5Y" firstAttribute="top" secondItem="mme-t4-1KS" secondAttribute="bottom" constant="30" id="ovH-ms-3xl"/>
+                        <constraint firstItem="mme-t4-1KS" firstAttribute="centerX" secondItem="lPz-TC-Zso" secondAttribute="centerX" id="qWT-wA-JSU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="lPz-TC-Zso" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2FA-dC-gCE"/>
+                <constraint firstItem="lPz-TC-Zso" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Wb6-EL-FyR"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

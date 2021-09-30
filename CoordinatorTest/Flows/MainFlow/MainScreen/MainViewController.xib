@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Test" customModuleProvider="target">
+            <connections>
+                <outlet property="amountLabel" destination="MZJ-b7-RLs" id="jvw-A0-20U"/>
+                <outlet property="phoneLabel" destination="qgj-69-8tg" id="2LM-O8-IWH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmy-5V-9Ca">
+                    <rect key="frame" x="160.5" y="437.5" width="93" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHp-bg-fmm">
+                    <rect key="frame" x="157" y="488.5" width="100" height="30"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.81960784310000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="YiM-gi-fnu"/>
+                        <constraint firstAttribute="width" constant="100" id="iDc-EW-v2q"/>
+                    </constraints>
+                    <state key="normal" title="Complete"/>
+                    <connections>
+                        <action selector="completeBtn:" destination="-1" eventType="touchUpInside" id="ioB-qn-PoI"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZJ-b7-RLs">
+                    <rect key="frame" x="178" y="104" width="58" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgj-69-8tg">
+                    <rect key="frame" x="183" y="145" width="48" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dc0-41-5PI">
+                    <rect key="frame" x="93" y="104" width="65" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPX-Vb-F0j">
+                    <rect key="frame" x="103" y="145" width="53" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemTealColor"/>
+            <constraints>
+                <constraint firstItem="qgj-69-8tg" firstAttribute="top" secondItem="MZJ-b7-RLs" secondAttribute="bottom" constant="20" id="80g-Oi-teV"/>
+                <constraint firstItem="BHp-bg-fmm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EGb-G6-Zzp"/>
+                <constraint firstItem="MZJ-b7-RLs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="GVb-bd-2Nt"/>
+                <constraint firstItem="bmy-5V-9Ca" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JWq-2B-2pd"/>
+                <constraint firstItem="MZJ-b7-RLs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NtE-KC-iSb"/>
+                <constraint firstItem="BHp-bg-fmm" firstAttribute="top" secondItem="bmy-5V-9Ca" secondAttribute="bottom" constant="30" id="PsI-Co-Emr"/>
+                <constraint firstItem="bmy-5V-9Ca" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="T0j-0x-rCY"/>
+                <constraint firstItem="qgj-69-8tg" firstAttribute="leading" secondItem="PPX-Vb-F0j" secondAttribute="trailing" constant="27" id="T9f-Cd-H4I"/>
+                <constraint firstItem="MZJ-b7-RLs" firstAttribute="leading" secondItem="Dc0-41-5PI" secondAttribute="trailing" constant="20" id="Wm6-6n-OGq"/>
+                <constraint firstItem="qgj-69-8tg" firstAttribute="centerY" secondItem="PPX-Vb-F0j" secondAttribute="centerY" id="acF-rV-S5N"/>
+                <constraint firstItem="MZJ-b7-RLs" firstAttribute="centerY" secondItem="Dc0-41-5PI" secondAttribute="centerY" id="ver-9u-lPx"/>
+                <constraint firstItem="qgj-69-8tg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yBB-Jd-ndC"/>
+            </constraints>
+            <point key="canvasLocation" x="125" y="119"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
