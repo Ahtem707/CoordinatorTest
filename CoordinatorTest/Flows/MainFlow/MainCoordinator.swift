@@ -17,7 +17,7 @@ extension InOutData {
 class MainCoordinator: BaseCoordinator, Coordinator {
     
     let factory = MainCoordinatorFactory()
-    var finishFlow: ((Empty?) -> Void)?
+    var finishFlow: ((InOutData.Empty?) -> Void)?
     
     var input: InOutData.MainCoordinatorIn?
     

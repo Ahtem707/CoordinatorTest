@@ -9,7 +9,7 @@ import UIKit
 
 class SecondViewController: UIViewController, FinishScreenProtocol {
 
-    var finish: ((Empty?)->Void)?
+    var finish: ((InOutData.Empty?)->Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()

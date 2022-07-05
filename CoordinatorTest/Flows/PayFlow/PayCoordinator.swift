@@ -20,28 +20,47 @@ class PayCoordinator: BaseCoordinator, Coordinator {
     var finishFlow: ((InOutData.PayCoordinatorOut?) -> Void)?
     var res = InOutData.PayCoordinatorOut()
     
+    var tabBarController: UITabBarController
+    
+    override init(navigationController: UINavigationController) {
+        tabBarController = UITabBarController()
+        navigationController.viewControllers = [tabBarController]
+        super.init(navigationController: navigationController)
+    }
+    
     func start() {
-        startEnterSumScreen()
+        startTabBarCoordinators(startPage: .table)
     }
 }
 
-// Start ViewControllers
 extension PayCoordinator {
-    func startEnterSumScreen() {
-        let vc = factory.makeEnterAmountVC()
-        vc.finish = { [weak self] out in
-            self?.res.amount = out?.amount
-            self?.startPhoneCheckScreen()
-        }
-        router.push(vc)
+    
+    func startTabBarCoordinators(startPage: PayCoordinatorPages) {
+        
+        let coordinators = [
+            getNavController(page: .table),
+            getNavController(page: .amount)
+        ]
+        tabBarController.setViewControllers(coordinators, animated: true)
+        tabBarController.selectedIndex = startPage.pageIndex()
     }
     
-    func startPhoneCheckScreen() {
-        let vc = factory.makePhoneCheckVC()
-        vc.finish = { [weak self] out in
-            self?.res.phone = out?.telephone
-            self?.finishFlow?(self?.res)
+    func getNavController(page: PayCoordinatorPages) -> UINavigationController {
+        let navController = UINavigationController()
+        navController.setNavigationBarHidden(page.isNavBarHidden(), animated: false)
+        navController.tabBarItem = UITabBarItem(
+            title: page.pageTitleValue(),
+            image: page.pageImage(),
+            tag: page.pageIndex())
+        
+        switch page {
+        case .table:
+            weak var tbCoord = addDependency(factory.makeTransferBungetCoordinator(navigationController: navController))
+            tbCoord?.start()
+        case .amount:
+            weak var eaCoord = addDependency(factory.makeEnterAmountCoordinator(navigationController: navController))
+            eaCoord?.start()
         }
-        router.present(vc)
+        return navController
     }
 }

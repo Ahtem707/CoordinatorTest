@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransferBungetBlockView" customModule="CoordinatorTest" customModuleProvider="target">
+            <connections>
+                <outlet property="boxView" destination="Omz-ke-TwY" id="TwI-vi-tkx"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ZmF-y9-zcc"/>
+                <outlet property="infoBtn" destination="pRo-Mp-vQ0" id="63g-iw-VZT"/>
+                <outlet property="infoLabel" destination="spq-rf-Jbc" id="iZ4-gC-0Fo"/>
+                <outlet property="nameLabel" destination="ylZ-tg-H2u" id="vM7-cP-QMl"/>
+                <outlet property="valueTextView" destination="pTc-Nw-htZ" id="vzq-1e-vtT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="142"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Omz-ke-TwY" userLabel="boxView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="117.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhN-n8-Jte">
+                            <rect key="frame" x="16" y="8" width="354" height="101.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylZ-tg-H2u" userLabel="name">
+                                    <rect key="frame" x="0.0" y="0.0" width="354" height="20"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do" translatesAutoresizingMaskIntoConstraints="NO" id="pTc-Nw-htZ">
+                                    <rect key="frame" x="0.0" y="20" width="354" height="81.5"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="textColor" systemColor="labelColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="pTc-Nw-htZ" firstAttribute="top" secondItem="ylZ-tg-H2u" secondAttribute="bottom" priority="750" id="2uB-t4-4sD"/>
+                                <constraint firstItem="ylZ-tg-H2u" firstAttribute="leading" secondItem="hhN-n8-Jte" secondAttribute="leading" id="45g-Ip-6Ya"/>
+                                <constraint firstItem="pTc-Nw-htZ" firstAttribute="top" secondItem="hhN-n8-Jte" secondAttribute="top" priority="250" id="PlR-5g-oEi"/>
+                                <constraint firstAttribute="trailing" secondItem="pTc-Nw-htZ" secondAttribute="trailing" id="YCc-8U-f0R"/>
+                                <constraint firstAttribute="trailing" secondItem="ylZ-tg-H2u" secondAttribute="trailing" id="ZrM-B7-M7r"/>
+                                <constraint firstAttribute="bottom" secondItem="pTc-Nw-htZ" secondAttribute="bottom" id="bez-OJ-s2m"/>
+                                <constraint firstItem="ylZ-tg-H2u" firstAttribute="top" secondItem="hhN-n8-Jte" secondAttribute="top" id="wxr-fI-Vbd"/>
+                                <constraint firstItem="pTc-Nw-htZ" firstAttribute="leading" secondItem="hhN-n8-Jte" secondAttribute="leading" id="z2k-0r-uRj"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRo-Mp-vQ0" userLabel="infoBtn">
+                            <rect key="frame" x="378" y="49" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="HT7-ea-DYV"/>
+                                <constraint firstAttribute="height" constant="20" id="X6Z-39-W9r"/>
+                            </constraints>
+                            <state key="normal" image="iconInfo"/>
+                            <connections>
+                                <action selector="infoBtn:" destination="-1" eventType="touchUpInside" id="qU8-TX-MQK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="pRo-Mp-vQ0" firstAttribute="leading" secondItem="hhN-n8-Jte" secondAttribute="trailing" constant="8" id="Ck2-QP-Bae"/>
+                        <constraint firstAttribute="bottom" secondItem="hhN-n8-Jte" secondAttribute="bottom" constant="8" id="FHS-Vv-ats"/>
+                        <constraint firstItem="hhN-n8-Jte" firstAttribute="leading" secondItem="Omz-ke-TwY" secondAttribute="leading" constant="16" id="O6d-VH-zil"/>
+                        <constraint firstItem="pRo-Mp-vQ0" firstAttribute="centerY" secondItem="hhN-n8-Jte" secondAttribute="centerY" id="X3X-z4-u0s"/>
+                        <constraint firstAttribute="trailing" secondItem="pRo-Mp-vQ0" secondAttribute="trailing" constant="16" id="roL-yp-PZq"/>
+                        <constraint firstItem="hhN-n8-Jte" firstAttribute="top" secondItem="Omz-ke-TwY" secondAttribute="top" constant="8" id="t9W-Bt-5ai"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spq-rf-Jbc" userLabel="info">
+                    <rect key="frame" x="16" y="121.5" width="382" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Omz-ke-TwY" secondAttribute="trailing" id="5kb-27-gN3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="spq-rf-Jbc" secondAttribute="trailing" constant="16" id="MsJ-sN-6pa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Omz-ke-TwY" secondAttribute="bottom" priority="250" id="TCh-gD-M5t"/>
+                <constraint firstItem="spq-rf-Jbc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="baQ-uM-zsz"/>
+                <constraint firstItem="Omz-ke-TwY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cfd-xJ-99F"/>
+                <constraint firstItem="Omz-ke-TwY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pWQ-2T-12a"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="spq-rf-Jbc" secondAttribute="bottom" id="s4c-pa-DL5"/>
+                <constraint firstItem="spq-rf-Jbc" firstAttribute="top" secondItem="Omz-ke-TwY" secondAttribute="bottom" constant="4" id="zvz-1H-ApE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="name" value="name"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="value" value="value"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="info" value="info"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="110.14492753623189" y="401.11607142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconInfo" width="20" height="20"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -10,13 +10,8 @@ import UIKit
 class RouterMain: Routable {
     
     // MARK:- Private variables
-    private weak var navigationViewController: UINavigationController?
-    private weak var rootViewController: UIViewController?
-    
-    init(rootViewController: UINavigationController) {
-        self.navigationViewController = rootViewController
-        self.rootViewController = rootViewController.viewControllers.last
-    }
+    weak var navigationViewController: UINavigationController?
+    weak var rootViewController: UIViewController?
     
     init(navigationController: UINavigationController) {
         self.navigationViewController = navigationController

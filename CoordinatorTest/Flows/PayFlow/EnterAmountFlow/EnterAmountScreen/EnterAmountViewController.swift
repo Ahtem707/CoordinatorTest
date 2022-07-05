@@ -24,7 +24,6 @@ class EnterAmountViewController: UIViewController, FinishScreenProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         nextBtnValidating()
     }
     
@@ -40,6 +39,7 @@ class EnterAmountViewController: UIViewController, FinishScreenProtocol {
         guard let text = textField.text else {return}
         guard let amount = Int(text) else {return}
         let res = InOutData.EnterAmountOut(amount: amount)
+        
         finish?(res)
     }
 }

@@ -5,20 +5,21 @@
 //  Created by Ahtem Sitjalilov on 27.09.2021.
 //
 
-import Foundation
+import UIKit
 
 protocol PayCoordinatorFactoryProtocol {
     
-    func makeEnterAmountVC() -> EnterAmountViewController
-    func makePhoneCheckVC() -> PhoneCheckViewController
+    func makeTransferBungetCoordinator(navigationController: UINavigationController) -> TransferBungetCoordinator
+    func makeEnterAmountCoordinator(navigationController: UINavigationController) -> EnterAmountCoordinator
 }
 
 class PayCoordinatorFactory: PayCoordinatorFactoryProtocol {
-    func makeEnterAmountVC() -> EnterAmountViewController {
-        return EnterAmountViewController()
+    
+    func makeTransferBungetCoordinator(navigationController: UINavigationController) -> TransferBungetCoordinator {
+        return TransferBungetCoordinator(navigationController: navigationController)
     }
     
-    func makePhoneCheckVC() -> PhoneCheckViewController {
-        return PhoneCheckViewController()
+    func makeEnterAmountCoordinator(navigationController: UINavigationController) -> EnterAmountCoordinator {
+        return EnterAmountCoordinator(navigationController: navigationController)
     }
 }

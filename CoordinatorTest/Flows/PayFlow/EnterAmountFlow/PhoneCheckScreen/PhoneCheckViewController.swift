@@ -49,7 +49,6 @@ class PhoneCheckViewController: UIViewController, FinishScreenProtocol {
     @IBAction func nextBtn(_ sender: Any) {
         guard let phone = phoneTextField.text else {return}
         let result = InOutData.PhoneCheckOut(telephone: phone)
-        dismiss(animated: true)
         finish?(result)
     }
 }

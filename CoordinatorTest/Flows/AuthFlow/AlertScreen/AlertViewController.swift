@@ -7,7 +7,7 @@ final class AlertViewController: UIViewController, FinishScreenProtocol {
     @IBOutlet weak var subText: UILabel!
     @IBOutlet weak var okBtn: UIButton!
     
-    var finish: ((Empty?)->Void)?
+    var finish: ((InOutData.Empty?)->Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()

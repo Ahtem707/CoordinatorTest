@@ -7,8 +7,8 @@
 
 import UIKit
 
-extension AuthCoordinator {
-    struct Out {
+extension InOutData {
+    struct AuthCoordinatorOut {
         var code: String?
     }
 }
@@ -16,10 +16,11 @@ extension AuthCoordinator {
 class AuthCoordinator: BaseCoordinator, Coordinator {
     
     let factory = AuthCoordinatorFactory()
-    var finishFlow: ((Out?) -> Void)?
+    var finishFlow: ((InOutData.AuthCoordinatorOut?) -> Void)?
     
     func start() {
         startEnterPinScreen()
+        
     }
     
     var code: String?
@@ -49,8 +50,7 @@ extension AuthCoordinator {
         let vc = factory.makeAlertFirstVC()
         vc.type = type
         vc.finish = { [weak self] _ in
-            print("finish AuhtCoordinator")
-            self?.finishFlow?(Out(code: self?.code))
+            self?.finishFlow?(InOutData.AuthCoordinatorOut(code: self?.code))
         }
         router.present(vc, animated: true)
     }

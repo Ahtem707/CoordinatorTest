@@ -17,7 +17,7 @@ extension InOutData {
 class MainViewController: UIViewController, FinishScreenProtocol {
     
     var input: InOutData.MainViewControllerIn?
-    var finish: ((Empty?) -> Void)?
+    var finish: ((InOutData.Empty?) -> Void)?
     
     @IBOutlet weak var amountLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!

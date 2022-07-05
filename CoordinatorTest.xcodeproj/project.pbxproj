@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1809F03E270DB2A700068295 /* TransferBungetBlockTwoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1809F03D270DB2A700068295 /* TransferBungetBlockTwoView.xib */; };
+		1809F041270DB2B900068295 /* TransferBungetBlockTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809F040270DB2B900068295 /* TransferBungetBlockTwoView.swift */; };
+		1812D4732719820200593EB9 /* UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812D4722719820200593EB9 /* UIControl.swift */; };
+		1812D47627198EA100593EB9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812D47527198EA100593EB9 /* UIColor.swift */; };
+		182F8B5F2705FBC50018AC35 /* TransferBungetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182F8B5D2705FBC50018AC35 /* TransferBungetViewController.swift */; };
+		182F8B602705FBC50018AC35 /* TransferBungetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182F8B5E2705FBC50018AC35 /* TransferBungetViewController.xib */; };
+		183131772716D84C00C94B2A /* PayCoordinatorPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183131762716D84C00C94B2A /* PayCoordinatorPages.swift */; };
+		18313182271707D200C94B2A /* TransferBungetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18313181271707D200C94B2A /* TransferBungetViewModel.swift */; };
+		185206FC27075B0800B41F91 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185206FB27075B0800B41F91 /* CustomView.swift */; };
+		1852070027075B3E00B41F91 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185206FF27075B3E00B41F91 /* String.swift */; };
+		1855F6852714314100DFE5AD /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1855F6842714314100DFE5AD /* Colors.xcassets */; };
+		1855F6932714642700DFE5AD /* TransferBungetCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855F688271461E700DFE5AD /* TransferBungetCoordinatorFactory.swift */; };
+		1855F6952714642A00DFE5AD /* TransferBungetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855F689271461E700DFE5AD /* TransferBungetCoordinator.swift */; };
+		1855F6972714642F00DFE5AD /* EnterAmountCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855F68B271462E100DFE5AD /* EnterAmountCoordinatorFactory.swift */; };
+		1855F6992714643100DFE5AD /* EnterAmountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855F68C271462E100DFE5AD /* EnterAmountCoordinator.swift */; };
+		186890E3270B40A2002F14D5 /* TransfetBungetStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186890E2270B40A2002F14D5 /* TransfetBungetStyle.swift */; };
+		18797421270AE4E6003BBA45 /* TransferBungetBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18797420270AE4E6003BBA45 /* TransferBungetBlockView.swift */; };
 		18849CE32705E10500376EAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18849CE22705E10500376EAD /* AppDelegate.swift */; };
 		18849CE52705E10500376EAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18849CE42705E10500376EAD /* SceneDelegate.swift */; };
 		18849CE72705E10500376EAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18849CE62705E10500376EAD /* ViewController.swift */; };
@@ -43,12 +60,32 @@
 		18849D492705E69000376EAD /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18849D282705E69000376EAD /* BaseCoordinator.swift */; };
 		18849D4A2705E69000376EAD /* RouterMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18849D292705E69000376EAD /* RouterMain.swift */; };
 		18849D4B2705E69000376EAD /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18849D2C2705E69000376EAD /* TextFieldDefault.swift */; };
+		18888ADE270DD4E7002A9D46 /* TransferBungetBlockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182DBADC270DD2110081A0E1 /* TransferBungetBlockView.xib */; };
+		18D6A2E7271806AC0053358E /* TaxAdditionalBtns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6A2E6271806AC0053358E /* TaxAdditionalBtns.swift */; };
 		615DE6662A55ECD324691764 /* Pods_CoordinatorTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4036816B1055DA77453F8FE /* Pods_CoordinatorTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1809F03D270DB2A700068295 /* TransferBungetBlockTwoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferBungetBlockTwoView.xib; sourceTree = "<group>"; };
+		1809F040270DB2B900068295 /* TransferBungetBlockTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferBungetBlockTwoView.swift; sourceTree = "<group>"; };
+		1812D4722719820200593EB9 /* UIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControl.swift; sourceTree = "<group>"; };
+		1812D47527198EA100593EB9 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		182DBADC270DD2110081A0E1 /* TransferBungetBlockView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferBungetBlockView.xib; sourceTree = "<group>"; };
+		182F8B5D2705FBC50018AC35 /* TransferBungetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferBungetViewController.swift; sourceTree = "<group>"; };
+		182F8B5E2705FBC50018AC35 /* TransferBungetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferBungetViewController.xib; sourceTree = "<group>"; };
+		183131762716D84C00C94B2A /* PayCoordinatorPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCoordinatorPages.swift; sourceTree = "<group>"; };
+		18313181271707D200C94B2A /* TransferBungetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferBungetViewModel.swift; sourceTree = "<group>"; };
+		185206FB27075B0800B41F91 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		185206FF27075B3E00B41F91 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		1855F6842714314100DFE5AD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		1855F688271461E700DFE5AD /* TransferBungetCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferBungetCoordinatorFactory.swift; sourceTree = "<group>"; };
+		1855F689271461E700DFE5AD /* TransferBungetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferBungetCoordinator.swift; sourceTree = "<group>"; };
+		1855F68B271462E100DFE5AD /* EnterAmountCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterAmountCoordinatorFactory.swift; sourceTree = "<group>"; };
+		1855F68C271462E100DFE5AD /* EnterAmountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterAmountCoordinator.swift; sourceTree = "<group>"; };
+		186890E2270B40A2002F14D5 /* TransfetBungetStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfetBungetStyle.swift; sourceTree = "<group>"; };
+		18797420270AE4E6003BBA45 /* TransferBungetBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferBungetBlockView.swift; sourceTree = "<group>"; };
 		18849CDF2705E10500376EAD /* CoordinatorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		18849CE22705E10500376EAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18849CE22705E10500376EAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; usesTabs = 0; };
 		18849CE42705E10500376EAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18849CE62705E10500376EAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18849CEB2705E10600376EAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +122,7 @@
 		18849D282705E69000376EAD /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		18849D292705E69000376EAD /* RouterMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterMain.swift; sourceTree = "<group>"; };
 		18849D2C2705E69000376EAD /* TextFieldDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
+		18D6A2E6271806AC0053358E /* TaxAdditionalBtns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxAdditionalBtns.swift; sourceTree = "<group>"; };
 		CA7588A751F1CB342C978701 /* Pods-CoordinatorTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoordinatorTest.debug.xcconfig"; path = "Target Support Files/Pods-CoordinatorTest/Pods-CoordinatorTest.debug.xcconfig"; sourceTree = "<group>"; };
 		E417A8D48E5BDD8008126AA2 /* Pods-CoordinatorTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoordinatorTest.release.xcconfig"; path = "Target Support Files/Pods-CoordinatorTest/Pods-CoordinatorTest.release.xcconfig"; sourceTree = "<group>"; };
 		F4036816B1055DA77453F8FE /* Pods_CoordinatorTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoordinatorTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +140,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1809F03C270DB27900068295 /* TransferBungetBlockTwoView */ = {
+			isa = PBXGroup;
+			children = (
+				1809F03D270DB2A700068295 /* TransferBungetBlockTwoView.xib */,
+				1809F040270DB2B900068295 /* TransferBungetBlockTwoView.swift */,
+			);
+			path = TransferBungetBlockTwoView;
+			sourceTree = "<group>";
+		};
+		182F8B5C2705FBA20018AC35 /* TransferBungetScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1831318727171CB900C94B2A /* CustomView */,
+				182F8B5D2705FBC50018AC35 /* TransferBungetViewController.swift */,
+				182F8B5E2705FBC50018AC35 /* TransferBungetViewController.xib */,
+				186890E2270B40A2002F14D5 /* TransfetBungetStyle.swift */,
+				18313181271707D200C94B2A /* TransferBungetViewModel.swift */,
+			);
+			path = TransferBungetScreen;
+			sourceTree = "<group>";
+		};
+		1831318727171CB900C94B2A /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				1831319127172D1E00C94B2A /* TaxAdditionalBtns */,
+				1809F03C270DB27900068295 /* TransferBungetBlockTwoView */,
+				185206D1270743DB00B41F91 /* TransferBungetBlockView */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		1831319127172D1E00C94B2A /* TaxAdditionalBtns */ = {
+			isa = PBXGroup;
+			children = (
+				18D6A2E6271806AC0053358E /* TaxAdditionalBtns.swift */,
+			);
+			path = TaxAdditionalBtns;
+			sourceTree = "<group>";
+		};
+		185206D1270743DB00B41F91 /* TransferBungetBlockView */ = {
+			isa = PBXGroup;
+			children = (
+				18797420270AE4E6003BBA45 /* TransferBungetBlockView.swift */,
+				182DBADC270DD2110081A0E1 /* TransferBungetBlockView.xib */,
+			);
+			path = TransferBungetBlockView;
+			sourceTree = "<group>";
+		};
+		185206FA27075AF300B41F91 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				185206FF27075B3E00B41F91 /* String.swift */,
+				1812D4722719820200593EB9 /* UIControl.swift */,
+				1812D47527198EA100593EB9 /* UIColor.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1855F687271461D200DFE5AD /* TransferBungetFlow */ = {
+			isa = PBXGroup;
+			children = (
+				1855F688271461E700DFE5AD /* TransferBungetCoordinatorFactory.swift */,
+				1855F689271461E700DFE5AD /* TransferBungetCoordinator.swift */,
+				182F8B5C2705FBA20018AC35 /* TransferBungetScreen */,
+			);
+			path = TransferBungetFlow;
+			sourceTree = "<group>";
+		};
+		1855F68A271462CC00DFE5AD /* EnterAmountFlow */ = {
+			isa = PBXGroup;
+			children = (
+				1855F68B271462E100DFE5AD /* EnterAmountCoordinatorFactory.swift */,
+				1855F68C271462E100DFE5AD /* EnterAmountCoordinator.swift */,
+				18849CFF2705E69000376EAD /* EnterAmountScreen */,
+				18849D022705E69000376EAD /* PhoneCheckScreen */,
+			);
+			path = EnterAmountFlow;
+			sourceTree = "<group>";
+		};
 		18849CD62705E10400376EAD = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +249,7 @@
 				18849CEB2705E10600376EAD /* Assets.xcassets */,
 				18849CED2705E10600376EAD /* LaunchScreen.storyboard */,
 				18849CF02705E10600376EAD /* Info.plist */,
+				1855F6842714314100DFE5AD /* Colors.xcassets */,
 			);
 			path = CoordinatorTest;
 			sourceTree = "<group>";
@@ -139,11 +257,11 @@
 		18849CFD2705E69000376EAD /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				18849CFE2705E69000376EAD /* PayFlow */,
-				18849D082705E69000376EAD /* AppCoordinator.swift */,
 				18849D092705E69000376EAD /* AppCoordinatorFactory.swift */,
-				18849D0A2705E69000376EAD /* AuthFlow */,
+				18849D082705E69000376EAD /* AppCoordinator.swift */,
 				18849D152705E69000376EAD /* MainFlow */,
+				18849D0A2705E69000376EAD /* AuthFlow */,
+				18849CFE2705E69000376EAD /* PayFlow */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -151,10 +269,11 @@
 		18849CFE2705E69000376EAD /* PayFlow */ = {
 			isa = PBXGroup;
 			children = (
-				18849CFF2705E69000376EAD /* EnterAmountScreen */,
-				18849D022705E69000376EAD /* PhoneCheckScreen */,
-				18849D062705E69000376EAD /* PayCoordinator.swift */,
 				18849D072705E69000376EAD /* PayCoordinatorFactory.swift */,
+				183131762716D84C00C94B2A /* PayCoordinatorPages.swift */,
+				18849D062705E69000376EAD /* PayCoordinator.swift */,
+				1855F68A271462CC00DFE5AD /* EnterAmountFlow */,
+				1855F687271461D200DFE5AD /* TransferBungetFlow */,
 			);
 			path = PayFlow;
 			sourceTree = "<group>";
@@ -212,10 +331,10 @@
 		18849D152705E69000376EAD /* MainFlow */ = {
 			isa = PBXGroup;
 			children = (
+				18849D1D2705E69000376EAD /* MainCoordinatorFactory.swift */,
+				18849D1C2705E69000376EAD /* MainCoordinator.swift */,
 				18849D162705E69000376EAD /* MainScreen */,
 				18849D192705E69000376EAD /* FirstScreen */,
-				18849D1C2705E69000376EAD /* MainCoordinator.swift */,
-				18849D1D2705E69000376EAD /* MainCoordinatorFactory.swift */,
 				18849D1E2705E69000376EAD /* SecondScreen */,
 			);
 			path = MainFlow;
@@ -251,18 +370,10 @@
 		18849D212705E69000376EAD /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				18849D222705E69000376EAD /* Navigation */,
 				18849D232705E69000376EAD /* BasicProtocols */,
 				18849D272705E69000376EAD /* Implementation */,
 			);
 			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		18849D222705E69000376EAD /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Navigation;
 			sourceTree = "<group>";
 		};
 		18849D232705E69000376EAD /* BasicProtocols */ = {
@@ -287,6 +398,7 @@
 		18849D2A2705E69000376EAD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				185206FA27075AF300B41F91 /* Extension */,
 				18849D2B2705E69000376EAD /* DefaultComponents */,
 			);
 			path = Classes;
@@ -295,6 +407,7 @@
 		18849D2B2705E69000376EAD /* DefaultComponents */ = {
 			isa = PBXGroup;
 			children = (
+				185206FB27075B0800B41F91 /* CustomView.swift */,
 				18849D2C2705E69000376EAD /* TextFieldDefault.swift */,
 			);
 			path = DefaultComponents;
@@ -376,15 +489,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182F8B602705FBC50018AC35 /* TransferBungetViewController.xib in Resources */,
 				18849CEF2705E10600376EAD /* LaunchScreen.storyboard in Resources */,
 				18849D412705E69000376EAD /* FirstViewController.xib in Resources */,
 				18849D312705E69000376EAD /* PhoneCheckViewController.xib in Resources */,
 				18849CEC2705E10600376EAD /* Assets.xcassets in Resources */,
+				1809F03E270DB2A700068295 /* TransferBungetBlockTwoView.xib in Resources */,
 				18849D442705E69000376EAD /* SecondViewController.xib in Resources */,
 				18849D3E2705E69000376EAD /* MainViewController.xib in Resources */,
 				18849D2D2705E69000376EAD /* EnterAmountViewController.xib in Resources */,
+				18888ADE270DD4E7002A9D46 /* TransferBungetBlockView.xib in Resources */,
 				18849D392705E69000376EAD /* EnterPinViewController.xib in Resources */,
 				18849D3C2705E69000376EAD /* AlertViewController.xib in Resources */,
+				1855F6852714314100DFE5AD /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,29 +558,44 @@
 				18849D302705E69000376EAD /* PhoneCheckViewModel.swift in Sources */,
 				18849D322705E69000376EAD /* PayCoordinator.swift in Sources */,
 				18849D4A2705E69000376EAD /* RouterMain.swift in Sources */,
+				1852070027075B3E00B41F91 /* String.swift in Sources */,
+				18313182271707D200C94B2A /* TransferBungetViewModel.swift in Sources */,
+				18D6A2E7271806AC0053358E /* TaxAdditionalBtns.swift in Sources */,
 				18849D362705E69000376EAD /* AuthCoordinatorFactory.swift in Sources */,
+				1809F041270DB2B900068295 /* TransferBungetBlockTwoView.swift in Sources */,
 				18849CE72705E10500376EAD /* ViewController.swift in Sources */,
 				18849D352705E69000376EAD /* AppCoordinatorFactory.swift in Sources */,
+				183131772716D84C00C94B2A /* PayCoordinatorPages.swift in Sources */,
 				18849CE32705E10500376EAD /* AppDelegate.swift in Sources */,
 				18849D472705E69000376EAD /* Presentable.swift in Sources */,
 				18849D482705E69000376EAD /* Coordinator.swift in Sources */,
+				185206FC27075B0800B41F91 /* CustomView.swift in Sources */,
+				1855F6932714642700DFE5AD /* TransferBungetCoordinatorFactory.swift in Sources */,
 				18849D332705E69000376EAD /* PayCoordinatorFactory.swift in Sources */,
 				18849D3F2705E69000376EAD /* MainViewController.swift in Sources */,
 				18849D2F2705E69000376EAD /* PhoneCheckViewController.swift in Sources */,
 				18849D402705E69000376EAD /* FirstViewController.swift in Sources */,
 				18849D342705E69000376EAD /* AppCoordinator.swift in Sources */,
+				1855F6952714642A00DFE5AD /* TransferBungetCoordinator.swift in Sources */,
+				1812D47627198EA100593EB9 /* UIColor.swift in Sources */,
 				18849D3A2705E69000376EAD /* EnterPinViewModel.swift in Sources */,
+				1855F6992714643100DFE5AD /* EnterAmountCoordinator.swift in Sources */,
 				18849D492705E69000376EAD /* BaseCoordinator.swift in Sources */,
 				18849D4B2705E69000376EAD /* TextFieldDefault.swift in Sources */,
+				18797421270AE4E6003BBA45 /* TransferBungetBlockView.swift in Sources */,
+				182F8B5F2705FBC50018AC35 /* TransferBungetViewController.swift in Sources */,
 				18849CE52705E10500376EAD /* SceneDelegate.swift in Sources */,
 				18849D3D2705E69000376EAD /* AlertViewController.swift in Sources */,
 				18849D462705E69000376EAD /* Routable.swift in Sources */,
 				18849D422705E69000376EAD /* MainCoordinator.swift in Sources */,
 				18849D372705E69000376EAD /* AuthCoordinator.swift in Sources */,
+				1812D4732719820200593EB9 /* UIControl.swift in Sources */,
 				18849D3B2705E69000376EAD /* EnterPinManager.swift in Sources */,
 				18849D452705E69000376EAD /* SecondViewController.swift in Sources */,
+				1855F6972714642F00DFE5AD /* EnterAmountCoordinatorFactory.swift in Sources */,
 				18849D2E2705E69000376EAD /* EnterAmountViewController.swift in Sources */,
 				18849D382705E69000376EAD /* EnterPinViewController.swift in Sources */,
+				186890E3270B40A2002F14D5 /* TransfetBungetStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +737,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N29SZ25DF4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Bond\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Differ\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveKit\"",
+				);
 				INFOPLIST_FILE = CoordinatorTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -11,14 +11,16 @@ protocol Coordinator: FinishFlowProtocol {
     func start()
 }
 
-struct Empty {}
+class InOutData {
+    struct Empty {}
+}
 
 protocol FinishFlowProtocol: class {
-    associatedtype Empty
+    associatedtype Empty = InOutData.Empty
     var finishFlow: ((Empty?) -> Void)? {get set}
 }
 
 protocol FinishScreenProtocol: class {
-    associatedtype Empty
+    associatedtype Empty = InOutData.Empty
     var finish: ((Empty?) -> Void)? {get set}
 }

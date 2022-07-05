@@ -7,17 +7,23 @@
 
 import UIKit
 
-@main
+//@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     var appCoordinator: AppCoordinator?
     
     var rootController: UINavigationController {
+
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.backgroundColor = .white
-        let vc = UIViewController()
-        let nav = UINavigationController(rootViewController: vc)
+        let theme = UIScreen.main.traitCollection.userInterfaceStyle
+        if theme == .dark {
+            window?.backgroundColor = .black
+        } else {
+            window?.backgroundColor = .white
+        }
+        let nav = UINavigationController()
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
         return nav
